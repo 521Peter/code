@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="1.CSS" />
+    <style>
+      body {
+        background-image: url("https://images5.alphacoders.com/857/857973.jpg");
+        /*插入背景图片*/
+        background-size: cover;
+        /* 使背景图覆盖整个页面 */
+      }
+      /*设置整个盒子*/
+      .box {
+        width: 409px;
+        height: 412px;
+        margin: 250px auto;
+        background-color: #ffffff;
+        /* 设置盒子的圆角边界 */
+        border: #ffffff 1px solid;
+        border-radius: 8px;
+      }
+      /* 设置选择登录的一栏 */
+      #selectLogin {
+        font-size: 16px;
+        padding-top: 47px;
+        padding-bottom: 33px;
+        border-bottom: #ffffff solid 1px;
+      }
+      /* 设置短信登录 */
+      #messageLg {
+        float: left;
+        width: 138px;
+        height: 30px;
+        margin-left: 34px;
+        /* 设置下划线 */
+        border-bottom: 1px solid #ebebeb;
+      }
+      #messageLg a{
+        color: #999;
+      }
+
+      /* 设置密码登录 */
+      #passwordLg {
+        float: left;
+        width: 138px;
+        height: 30px;
+        /* 设置下划线 */
+        border-bottom: 1px solid #ebebeb;
+      }
+      #passwordLg a{
+        color: #999;
+      }
+      /* 设置SIM登陆 */
+      #SIMLg {
+        float: left;
+        width: 64px;
+        height: 30px;
+        /* 设置下划线 */
+        border-bottom: 1px solid #ebebeb;
+      }
+      /* 设置SIM登录的下划线 */
+      #SIMLg a {
+        display: inline-block;
+        width: 64px;
+        height: 100%;
+        border-bottom: red 2px solid;
+      }
+      #SIMLg a{
+        color: #282828;
+      }
+      /* 设置手机号登陆 */
+      #phoneNumber {
+        color:  #B0B3B5;
+        display: block;
+        /* 居中 */
+        margin: 9px auto 5px;
+        width: 337.23px;
+        height: 43px;
+        font-size: 14px;
+        /* 设置圆形边框 */
+        border: #ebebeb 1px solid;
+        border-radius: 5px;
+        /* 改变点击input框时的颜色*/
+        outline-color: #e30077;
+      }
+      #phoneNumber input{
+        text-align:left;
+      }
+      /* 设置登陆按钮 */
+      #loginBt {
+        margin: 7px auto;
+        display: block;
+        font-size: 14px;
+        color: #ffffff;
+        width: 340px;
+        height: 45px;
+        background-color: #e30077;
+        border: red 1px solid;
+        border-radius: 5px;
+      }
+      /* 设置鼠标移入时的颜色 */
+      #loginBt:hover{
+        background-color: #fa4472;
+      }
+      /* 设置条款 */
+      #agreement {
+        display: block;
+        font-size: 13px;
+        text-align: center;
+        margin-top: 33px;
+        color: #95989c;
+      }
+      #agreement a{
+          color: #e30077;
+      }
+      /* 设置温馨提示 */
+      #tips{
+        height: 60px;
+        width: 340px;
+        font-size: 14px;
+        padding:9px 0px 23px 36px;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="box">
+        <div id="selectLogin">
+            <div id="messageLg"><a href="./登录系统之短信登录.html">短信登录</a></div>
+            <div id="passwordLg"><a href="./登录系统之密码登录.html">密码登录</a></div>
+            <div id="SIMLg"><a href="./登录系统之SIM登录.html">SIM登录</a></div>
+        </div>
+        </br><input type="text" value="手机号" id="phoneNumber"/>
+        <br/><button id="loginBt">登录</button>
+        <br/><div id="tips">
+            温馨提示：<br><br>
+            1.“SIM登录”是由中国移动提供的PC端安全登录服务<br><br>
+            2.输入手机号点击“登录”，即可在手机上查看登录请<br><br>
+            求，并使用手机进行登录授权
+        </div>
+        <br/><div id="agreement">
+            登录即同意<a href="https://passport.migu.cn/portal/protocol?sourceid=220001" target="inline-block">《咪咕用户服务协议》</a>和<a href="https://passport.migu.cn/portal/privacy/protocol?sourceid=220001" target="inline-block">《咪咕隐私权政策》</a>
+        </div>
+    </div>
+  </body>
+</html>
